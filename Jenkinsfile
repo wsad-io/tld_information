@@ -6,7 +6,7 @@ pipeline {
             label 'sunfire'
             }
         }
-      stages 
+      steps
         {
         stage('Download TLD Data') 
             {
