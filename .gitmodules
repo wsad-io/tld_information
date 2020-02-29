@@ -1,0 +1,3 @@
+[submodule "open-tld-downstream-client"]
+	path = open-tld-downstream-client
+	url = https://gitlab.wsad.io/client-repos/wsad/open-tld-downstream-client.git

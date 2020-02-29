@@ -16,7 +16,7 @@ function prepare()
 function buildClient()
 	{
 	#git pull git@github.com:icann/czds-api-client-java.git
-	cd czds-api-client-java
+	cd open-tld-downstream-client
 	echo "Calling into maven to clean install (client_build.log)"
 	mvn clean install  
 	echo "Done"
@@ -25,7 +25,7 @@ function buildClient()
 
 function startDownload()
 	{
-	cd czds-api-client-java
+	cd open-tld-downstream-client
 	echo "Executing zonefile download client"
 	java -jar ./target/zonefile-downloader.jar -d ../zonefiles/
 	cd ..
