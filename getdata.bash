@@ -15,10 +15,10 @@ function prepare()
 
 function buildClient()
 	{
-	git clone git@github.com:icann/czds-api-client-java.git
+	git pull git@github.com:icann/czds-api-client-java.git
 	cd czds-api-client-java
 	echo "Calling into maven to clean install (client_build.log)"
-	mvn clean install  || true
+	mvn clean install  
 	echo "Done"
 	cd ..
 	}
