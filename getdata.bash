@@ -16,6 +16,7 @@ function prepare()
 function buildClient()
 	{
 	cd czds-api-client-java
+	git pull
 	echo "Calling into maven to clean install (client_build.log)"
 	mvn clean install  || true
 	echo "Done"
