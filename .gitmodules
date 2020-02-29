@@ -1,0 +1,3 @@
+[submodule "czds-api-client-java"]
+	path = czds-api-client-java
+	url = https://github.com/icann/czds-api-client-java.git
