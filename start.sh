@@ -11,11 +11,7 @@ function prepare()
 	fi
 
 	cd ./zonefiles/zonefiles
-
-	if [ ! -d "data.old" ]; then
-  		mkdir data.old
-	fi
-	mv * data.old >> /dev/null
+	rm *
 	cd ..
 	cd ..
 	}
