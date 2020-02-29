@@ -17,14 +17,17 @@ function buildClient()
 	{
 	cd czds-api-client-java
 	echo "Calling into maven to clean install (client_build.log)"
-	mvn clean install > client_build.log || true
+	mvn clean install  || true
 	echo "Done"
+	cd ..
 	}
 
 function startDownload()
 	{
+	cd czds-api-client-java
 	echo "Executing zonefile download client"
 	java -jar ./target/zonefile-downloader.jar -d ../zonefiles/
+	cd ..
 	}
 
 function cleanData()
