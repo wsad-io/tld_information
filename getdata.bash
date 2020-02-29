@@ -9,15 +9,11 @@ function prepare()
 		echo "Created ./zonefiles/zonefiles directory"
 		mkdir ./zonefiles/zonefiles
 	fi
-
-	cd ./zonefiles/zonefiles
-	rm *
-	cd ..
-	cd ..
 	}
 
 function buildClient()
 	{
+	cd czds-api-client-java
 	echo "Calling into maven to clean install (client_build.log)"
 	mvn clean install > client_build.log
 	echo "Done"
@@ -26,12 +22,12 @@ function buildClient()
 function startDownload()
 	{
 	echo "Executing zonefile download client"
-	java -jar ./target/zonefile-downloader.jar
+	java -jar ./target/zonefile-downloader.jar -d ../zonefiles/
 	}
 
 function cleanData()
 	{
-	bash cleanData.sh
+	bash process.bash
 	}
 
 prepare
