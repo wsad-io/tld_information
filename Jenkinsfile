@@ -6,7 +6,7 @@ pipeline {
             label 'sunfire'
             }
         }
-      steps
+      stages
         {
         stage('Download TLD Data') 
             {
@@ -16,6 +16,7 @@ pipeline {
                     bash getdata.bash
                 '''
                 }
+	    }
 	stage('Process TLD Data')
 	   {
 	   steps
