@@ -7,7 +7,7 @@ pipeline {
             }
         }
 	environment {
-  
+                    PLACEHOLDER=TEST
 		    }
       stages 
         {
