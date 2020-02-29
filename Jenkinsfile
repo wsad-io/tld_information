@@ -26,15 +26,42 @@ pipeline {
                 '''
                 }
 	    }
-	stage('Process TLD Data')
-	   {
-	   steps
-		{
-		sh '''
-		   bash process.bash
-		'''
-		}
-	   }
+	 stage('Decompress TLD Data')
+            {
+            steps
+                {
+                sh '''
+                    bash decompress.bash
+                '''
+                }
+            }
+	 stage('Import to MongoDB')
+            {
+            steps
+                {
+                sh '''
+                    bash process-mongo.bash
+                '''
+                }
+            }
+	 stage('Convert to csv')
+            {
+            steps
+                {
+                sh '''
+                    bash process-csv.bash
+                '''
+                }
+            }
+	 stage('Split csv (90m)')
+            {
+            steps
+                {
+                sh '''
+                    bash process-splitcsv.bash
+                '''
+                }
+            }
         }
     }
 

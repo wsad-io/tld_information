@@ -18,21 +18,12 @@ function processZonefiles()
    	   echo "mongo import zonefile direct to db (in background)"
 	   mongoimport --db $DB --collection $filename --file $f --host $HOST --port $PORT --type $TYPE --fields=origin,ttl,in,type,rec,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13,data14,data15,data16,data17,data18,data19,data20 
 
-	   echo "sed string replacement to CSV"
-	   sed 's/[[:blank:]]/,/g' $f > $filename.csv 
-	  
-	   echo "Splitting CSV into 90m chunks (for github) "
-	   mkdir $filename.split.csv
-  	   cd $filename.split.csv
-	   split -C 90m --numeric-suffixes ../$filename.csv $filename.csv._
-	   cd ..
 	   echo "Done with " $f
 	done
 
 	}
 
-#decompressZonefiles
-#processZonefiles
+processZonefiles
 
 
 
