@@ -17,7 +17,7 @@ function buildClient()
 	{
 	cd czds-api-client-java
 	echo "Calling into maven to clean install (client_build.log)"
-	mvn clean install > client_build.log
+	mvn clean install > client_build.log || true
 	echo "Done"
 	}
 
