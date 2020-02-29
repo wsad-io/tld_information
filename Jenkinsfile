@@ -6,9 +6,6 @@ pipeline {
             label 'sunfire'
             }
         }
-	environment {
-                    PLACEHOLDER=TEST
-		    }
       stages 
         {
         stage('Git Pull') 
