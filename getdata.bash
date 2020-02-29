@@ -2,7 +2,7 @@
 
 function prepare()
 	{
-	MAVEN_HOME="/usr/share/maven"
+#	MAVEN_HOME="/usr/share/maven"
 #	PATH=$PATH;$MAVEN_HOME/bin
 	echo "Preparing folders"
 	if [ ! -d "zonefiles" ]; then
@@ -17,7 +17,7 @@ function buildClient()
 	{
 	cd czds-api-client-java
 	echo "Calling into maven to clean install (client_build.log)"
-	/usr/share/maven/bin/mvn clean install > client_build.log
+	mvn clean install > client_build.log
 	echo "Done"
 	}
 
