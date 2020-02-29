@@ -2,6 +2,8 @@
 
 function prepare()
 	{
+	MAVEN_HOME="/usr/share/maven"
+	PATH=$PATH;$MAVEN_HOME/bin
 	echo "Preparing folders"
 	if [ ! -d "zonefiles" ]; then
 		echo "Created ./zonefiles directory"
