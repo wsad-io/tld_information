@@ -8,7 +8,16 @@ pipeline {
         }
       stages
         {
-        stage('Download TLD Data') 
+	 stage('Build Fresh ICANN Java Client')
+            {
+            steps
+                {
+                sh '''
+                    bash buildclient.bash
+                '''
+                }
+            }
+        stage('Download TLD Data from ICANN') 
             {
             steps 
                 {
