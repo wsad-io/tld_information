@@ -13,9 +13,18 @@ pipeline {
             steps 
                 {
                 sh '''
-                    ls
+                    bash getdata.bash
                 '''
                 }
+	stage('Process TLD Data')
+	   {
+	   steps
+		{
+		sh '''
+		   bash process.bash
+		'''
+		}
+	   }
         }
     }
 }
