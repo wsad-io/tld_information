@@ -3,11 +3,6 @@
 
 function processZonefiles()
 	{
-        HOST=192.168.86.27
-        PORT=27017
-        TYPE=tsv
-        COLLECTION=tld_zonedata
-        DB=publicDB
 	cd zonefiles/zonefiles
 	echo "Beginning CSV conversion"
 	for f in *.txt
@@ -19,9 +14,12 @@ function processZonefiles()
 
 	   echo "sed string replacement to CSV"
 	   sed 's/[[:blank:]]/,/g' $f > $f.csv
+	   echo "Removing original"
+           rm $f
 	   echo "Done with " $f
 	done
-
+	cd ..
+	cd ..
 	}
 
 processZonefiles

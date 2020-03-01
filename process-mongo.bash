@@ -22,6 +22,7 @@ function processZonefiles()
 	   echo "Done with " $f
 	done
 	cd ..
+	cd ..
 	}
 
 processZonefiles
