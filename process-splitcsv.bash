@@ -8,6 +8,7 @@ function processZonefiles()
         TYPE=tsv
         COLLECTION=tld_zonedata
         DB=publicDB
+	cd zonefiles/zonefiles
 	echo "Beginning Import to MongoDB, commiting to source tree and pre-processing"
 	for f in *.txt
 	do
@@ -16,9 +17,9 @@ function processZonefiles()
 
 	   echo "Processing $f (TLD: $filename)"
 	   echo "Splitting CSV into 90m chunks (for github) "
-	   mkdir $filename.split.csv
-  	   cd $filename.split.csv
-	   split -C 90m --numeric-suffixes ../$filename.csv $filename.csv._
+	   mkdir $f.split.csv
+  	   cd $f.split.csv
+	   split -C 90m --numeric-suffixes ../$f.csv $.csv._
 	   cd ..
 	   echo "Done with " $f
 	done

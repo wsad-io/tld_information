@@ -3,6 +3,7 @@
 
 function processZonefiles()
 	{
+	cd zonefiles/zonefiles
         HOST=192.168.86.27
         PORT=27017
         TYPE=tsv
@@ -20,7 +21,7 @@ function processZonefiles()
 
 	   echo "Done with " $f
 	done
-
+	cd ..
 	}
 
 processZonefiles

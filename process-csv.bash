@@ -8,6 +8,7 @@ function processZonefiles()
         TYPE=tsv
         COLLECTION=tld_zonedata
         DB=publicDB
+	cd zonefiles/zonefiles
 	echo "Beginning CSV conversion"
 	for f in *.txt
 	do
@@ -17,7 +18,7 @@ function processZonefiles()
 	   echo "Processing $f (TLD: $filename)"
 
 	   echo "sed string replacement to CSV"
-	   sed 's/[[:blank:]]/,/g' $f > $filename.csv
+	   sed 's/[[:blank:]]/,/g' $f > $f.csv
 	   echo "Done with " $f
 	done
 
