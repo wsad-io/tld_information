@@ -3,7 +3,7 @@ pipeline {
         {
         node 
             {
-            label 'sunfire'
+            label 'zerozero'
             }
         }
       stages

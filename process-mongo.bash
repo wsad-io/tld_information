@@ -4,8 +4,8 @@
 function processZonefiles()
 	{
 	cd zonefiles/zonefiles
-        HOST=192.168.86.27
-        PORT=27017
+        HOST=54.188.121.97
+        PORT=27018
         TYPE=tsv
         COLLECTION=tld_zonedata
         DB=publicDB
