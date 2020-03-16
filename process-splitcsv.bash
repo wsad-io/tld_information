@@ -14,7 +14,7 @@ function processZonefiles()
 	   echo "Splitting CSV into 90m chunks (for github) "
 	   mkdir "${filename}.split"
 	   #mv ${filename} "${filename}.splig"
-  	   cd "{$filename}.split"
+  	   cd "${filename}.split"
 	   split -C 90m --numeric-suffixes ../$filename.csv $filename.csv._
   	   echo "Removing source CSV"
 #	   rm $filename.csv
