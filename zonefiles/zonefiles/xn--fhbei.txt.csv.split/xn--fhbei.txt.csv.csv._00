@@ -1,0 +1,17 @@
+xn--fhbei.,86400,in,soa,ac1.nstld.com.,info.verisign-grs.com.,1584323973,1800,900,604800,86400
+xn--fhbei.,86400,in,rrsig,soa,8,1,86400,20200322234933,20200315234933,42904,xn--fhbei.,XrPF8RkxaW7oLvfgUzgeoU3kceT68gCm8mnScPVp2rSnKl74klJ5hsPjl89S7gQ3NzpDasWJHdFJaqmfOjPv6iZD+SR6xfmiFnZV9InxlXJ+goPkTwH+Legn/sRZPPyCBD4BXT7fz41cud+/IWL7KnTIZ0XdiAHmjdz+IXx483ugPxSRABB1UZmiTjAhxuzzA9rLUqzF3xwOyp5wVizO2A==
+xn--fhbei.,172800,in,ns,ac1.nstld.com.
+xn--fhbei.,172800,in,ns,ac2.nstld.com.
+xn--fhbei.,172800,in,ns,ac3.nstld.com.
+xn--fhbei.,172800,in,ns,ac4.nstld.com.
+xn--fhbei.,172800,in,rrsig,ns,8,1,172800,20200320162017,20200313162017,42904,xn--fhbei.,RZ9jYYGFk6krGq5NrqUQc0EcBQDFmIPMtu/zYG1XvcYmJUbtoJ8lihdsAP43ZGJfYHI7upM8fslWvZzaSzkP+iy9de2WtroXE25/wMjGBGz8i4HJmyae5Xo8UIjzosfd85FFme6sUqNwlshehkxvCNrmKroq+BcSl4zqVXVGz/LMO5xDhikpP4VGdyNYiLPaCUaFvpb8xvwwCzB6clvUjQ==
+xn--fhbei.,86400,in,dnskey,257,3,8,AQO9+xFp5Et8rmH2tNAXA/5YrsPwpQvFZPtWJUgn9Nv5GFmLByacIOmoTFfq0zRMCS12hjrqtBk+Y9lWJHnFcjsYszPy33U5kEm7DkoOLRTdi7436uYg6Pq+UjmNynFlF9Z+cCXHA+E4zST3Bp3GCUB5gP/6L7GAzYK8rYy2+YRaCM6PszgapnGvcSkWUy2CRK+TB2n/yktIpnGYgnelcTn9QLnv/pqv9LEehuVcjlQ9wipJ0V+4tRfzTI2rsM6DxPoQ3p14iFLtFVwpEe5MOlgKtjc6qF7/emIDzWBXXm0PSfqTHzyY7e3H2pDCVp2GJdzBeIeABeLKiOOFzhulzX21
+xn--fhbei.,86400,in,dnskey,256,3,8,AwEAAZ5pmxbf/CblzG8gkrgtNJDu5bOH1h4EG7BMKVlfbQsMKT6hPu+5JpK3guVseVK/0OSRcVD52RpnqqgFqj/L7FxpmolcXq2n1eJY6C2oUw4PpEh9QCsKQJXkNGdmjHYZACF0wcr6qYwiEkg5PQeOvoReI3u7LvZri0Hb6p6zYTtGhmsU8zKd1Ysm2negBXTUZGJXXZqyu6HivlUZwYPEOCE=
+xn--fhbei.,86400,in,rrsig,dnskey,8,1,86400,20200326170027,20200311165527,9171,xn--fhbei.,qonAmj0/0oxddbzbKpaUIOlaoj2CvMdval3E6wJMCrg4bgNGYQMuHQDNszmUHvmdxd6m/DwzZieHJNQqOXXdtBYV1KeG6UL+Q31Wu+5qqo7TYn9D12FAgckOErfhEWdWXT5NWBFE6B3f2D70KpQkBbLwCGa+zGLqY0Up7W97agNp/8+UGQ3Dq6R0k7hN64PXXMXGpEJl6Y8A+qSQPElPYkiqsGzoCW8skmQ3N/chCTqXpa5Ad9lWhy/2sYLuh+88s86xusLxQ2WCmWWfcaXO5GSp+JjHwXZsYgS7vnT44nZwNfmwdCl4FquNcJaneBK6tCcvA0LEPMzTOaiaVbOTMQ==
+xn--fhbei.,86400,in,nsec3param,1,0,0,-
+xn--fhbei.,86400,in,rrsig,nsec3param,8,1,86400,20200320162017,20200313162017,42904,xn--fhbei.,gxFKfZuywvyet5HOf03P6HXyrFQg8TwLyT5LwgGQ+ETjV4cQM1UqNEE+TQqyRhgwk8iPz2FMGMgPd7MrcNqcwi2/huiDhts3179WEEezuMuC7rhgkkRpgcw0ThBF2grsKKADhwpxESKQFntC7K2cdbV57PmJR7CGr8DNDKxZxjoLQMUioGEcp6GSpZxHzRGXDGa1y8BPpWPkU0MG/zqH8w==
+3mm6gri7mm065gfldcqdotarpb3sseb6.xn--fhbei.,86400,in,nsec3,1,1,0,-,3mm6gri7mm065gfldcqdotarpb3sseb6,dnskey,ns,nsec3param,rrsig,soa
+3mm6gri7mm065gfldcqdotarpb3sseb6.xn--fhbei.,86400,in,rrsig,nsec3,8,2,86400,20200320162017,20200313162017,42904,xn--fhbei.,c8GQDCkJDWI7ujBKDNzV0L4cDHFlAPWtVq/QYrjDfiQ95LpZTZofblV7JVQ1c2xvcfmszbhYTScLS9Dj0QhfRnaCuXhPbvix0HSbzXiUs8GWDyZp601cfm9VqDZpgvMtPNFYe78ie9HELZ/GHEQHRvtTRgTdiKcAbzksBZtbMlH8NBA57I4fp0XYiRHN0KWoEWiscilzhVw7/olxVRb0wA==
+nic.xn--fhbei.,172800,in,ns,a1.verisigndns.com.
+nic.xn--fhbei.,172800,in,ns,a2.verisigndns.com.
+nic.xn--fhbei.,172800,in,ns,a3.verisigndns.com.
