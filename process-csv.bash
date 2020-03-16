@@ -3,6 +3,7 @@
 
 function processZonefiles()
 	{
+	shopt -s nullglob
 	cd zonefiles/zonefiles
 	echo "Beginning CSV conversion"
 	for f in *.txt

@@ -4,22 +4,24 @@
 function processZonefiles()
 	{
 	cd zonefiles/zonefiles
-	echo "Beginning Import to MongoDB, commiting to source tree and pre-processing"
-	for f in *.txt
+	echo "Beginning Splitting CSV's"
+	shopt -s nullglob
+	for f in *.txt.csv
 	do
 	   filename="${f%%.*}"
 	   NOW=$( date '+%F_%H_%M_%S' )
 	   echo "Processing $f (TLD: $filename)"
 	   echo "Splitting CSV into 90m chunks (for github) "
-	   mkdir $filename.split.csv
-  	   cd $filename.split.csv 
+	   mkdir "${filename}.split"
+	   #mv ${filename} "${filename}.splig"
+  	   cd "{$filename}.split"
 	   split -C 90m --numeric-suffixes ../$filename.csv $filename.csv._
-	   cd ..
   	   echo "Removing source CSV"
-	   rm $filename.csv
-	   git add $filename.split.csv/*
+#	   rm $filename.csv
+	   git add .
 	   git commit -m "$filename.split.csv/* added to git on $NOW"
 	   echo "Done with  " $filename.split.csv
+	   cd ..
 	done
 	cd ..
 	cd ..
