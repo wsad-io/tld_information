@@ -8,19 +8,19 @@ function processZonefiles()
 	shopt -s nullglob
 	for f in *.txt.csv
 	do
-	   filename="${f%%.*}"
+	   filename="${f%%.*}.txt.csv"
 	   NOW=$( date '+%F_%H_%M_%S' )
 	   echo "Processing $f (TLD: $filename)"
 	   echo "Splitting CSV into 90m chunks (for github) "
 	   mkdir "${filename}.split"
-	   #mv ${filename} "${filename}.splig"
+	   mv ${filename} "${filename}.split/${filename}"
   	   cd "${filename}.split"
-	   split -C 90m --numeric-suffixes ../$filename.csv $filename.csv._
+	   split -C 90m --numeric-suffixes $filename $filename.csv._
   	   echo "Removing source CSV"
-#	   rm $filename.csv
-	   git add .
+	   rm $filename
+	   git add $filename*._*
 	   git commit -m "$filename.split.csv/* added to git on $NOW"
-	   echo "Done with  " $filename.split.csv
+	   echo "Done with  " $filename
 	   cd ..
 	done
 	cd ..
